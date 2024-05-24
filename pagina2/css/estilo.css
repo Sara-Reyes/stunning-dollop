@@ -1,0 +1,368 @@
+     /* Definición de variables CSS */
+     :root {
+        --color-background: #ffffff; /* Color de fondo predeterminado */
+        --color-text: #363636; /* Color de texto predeterminado */
+        --color-accent: #C97590; /* Color de acento predeterminado */
+        --color-btn: #D2406D; /* Color de fondo para botones */
+    }
+    
+    /* Estilos para el cuerpo del documento */
+    body {
+        margin: 0; /* Elimina el margen predeterminado */
+        padding: 0; /* Elimina el relleno predeterminado */
+        font-family: Arial, sans-serif; /* Tipo de fuente predeterminado */
+        background-color: var(--color-background); /* Usa el color de fondo definido */
+        color: var(--color-text); /* Usa el color de texto definido */
+    }
+    
+    /* Estilos para la sección de portada */
+    .portada {
+        position: relative; /* Establece una posición relativa */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: auto; /* Ajusta la altura automáticamente */
+        overflow: hidden; /* Oculta el contenido que desborde */
+    }
+    
+    /* Estilos para la imagen de portada */
+    .portada-img {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        height: 350px; /* Fija la altura */
+        display: block; /* Muestra como bloque */
+    }
+    
+    /* Estilos para el título de la portada */
+    .titulo-portada {
+        position: absolute; /* Establece una posición absoluta */
+        top: 50%; /* Alinea en la mitad superior */
+        left: 50%; /* Alinea en el centro horizontal */
+        transform: translate(-50%, -50%); /* Centra el elemento */
+        text-align: center; /* Alinea el texto al centro */
+        color: white; /* Color de texto */
+        font-size: 3em; /* Tamaño de fuente */
+        font-style: italic; /* Estilo de fuente cursiva */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra de texto */
+        z-index: 1; /* Orden de apilamiento */
+    }
+    
+    .head {
+        background-color: var(--color-accent); /* Usa el color de acento definido */
+        padding: 10px 0; /* Añade relleno superior e inferior */
+    }
+    
+    .encabezado {
+        text-align: center; /* Alinea el texto al centro */
+        font-style: italic; /* Estilo de fuente cursiva */
+    }
+    
+    .nav {
+        list-style-type: none; /* Elimina el marcado de lista */
+        padding: 0; /* Elimina el relleno */
+        text-align: center; /* Alinea el texto al centro */
+        display: flex; /* Usa un modelo de caja flexible */
+        justify-content: space-around; /* Distribuye uniformemente los elementos */
+    }
+    
+    .nav li {
+        margin: 0; /* Elimina el margen */
+        flex-grow: 1; /* Hace que los elementos ocupen todo el ancho disponible */
+    }
+    
+    .nav li a {
+        font-style: initial; /* Restablece el estilo de fuente */
+        text-decoration: none; /* Elimina el subrayado */
+        color: #ffffff; /* Color de texto */
+        font-size: 1em; /* Tamaño de fuente */
+        transition: font-size 0.3s; /* Transición suave */
+    }
+    
+    .nav li a:hover {
+        font-size: 1.2em; /* Cambia el tamaño de fuente al pasar el mouse */
+    }
+    
+    .encabezado :hover {
+        color: var(--color-text); /* Cambia el color de texto al pasar el mouse */
+    }
+    
+    .title {
+        text-align: center; /* Alinea el texto al centro */
+        color: var(--color-text); /* Usa el color de texto definido */
+        margin-top: 40px; /* Añade un margen superior */
+    }
+    
+    .title-MENU {
+        text-align: center; /* Alinea el texto al centro */
+        color: var(--color-text); /* Usa el color de texto definido */
+    }
+    
+    .card {
+        display: flex; /* Usa un modelo de caja flexible */
+        flex-wrap: wrap; /* Permite el ajuste de elementos en múltiples líneas */
+        justify-content: center; /* Alinea los elementos al centro horizontal */
+        gap: 20px; /* Añade espacio entre elementos */
+        margin-top: 20px; /* Añade un margen superior */
+    }
+    
+    .card__item {
+        width: calc(25% - 20px); /* Fija el ancho de las tarjetas */
+        background-color: #f9f9f9; /* Color de fondo */
+        border-radius: 10px; /* Borde redondeado */
+        overflow: hidden; /* Oculta el contenido que desborde */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+        margin-bottom: 20px; /* Añade un margen inferior */
+    }
+    
+    .card__title {
+        font-size: 1.5rem; /* Tamaño de fuente */
+        margin: 0; /* Elimina el margen */
+        padding: 10px; /* Añade relleno */
+        background-color: var(--color-accent); /* Usa el color de acento definido */
+        color: var(--color-background); /* Usa el color de fondo definido */
+    }
+    
+    .card__content {
+        padding: 10px; /* Añade relleno */
+    }
+    
+    .card__picture {
+        margin-bottom: 0; /* Elimina el margen inferior */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        overflow: hidden; /* Oculta el contenido que desborde */
+    }
+    
+    .card__picture img {
+        max-width: 100%; /* Fija el ancho máximo */
+        height: auto; /* Permite que la altura se ajuste automáticamente */
+        object-fit: cover; /* Escala la imagen para cubrir el contenedor */
+    }
+    
+    .card__texts {
+        text-align: center; /* Alinea el texto al centro */
+    }
+    
+    .card__paragraph {
+        margin: 0; /* Elimina el margen */
+    }
+    
+    .precio {
+        margin: 0; /* Elimina el margen */
+        color: var(--color-btn); /* Usa el color de botón definido */
+    }
+    .whatsapp-button {
+        display: block;
+        width: 100%;
+        background-color: #D2406D;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 5px;
+    }
+    
+    .whatsapp-button:hover {
+        background-color: #1EBE54;
+
+    }
+    
+    .whatsapp-button:active {
+        background-color: #728c12;
+
+    }
+    
+
+    
+    .btn {
+        display: block; /* Muestra como bloque */
+        width: 100%; /* Ocupa todo el ancho disponible */
+        background-color: var(--color-btn); /* Usa el color de botón definido */
+        color: var(--color-background); /* Usa el color de fondo definido */
+        text-decoration: none; /* Elimina el subrayado */
+        text-align: center; /* Alinea el texto al centro */
+        padding: 10px 0; /* Añade relleno */
+        border: none; /* Elimina el borde */
+        border-radius: 5px; /* Borde redondeado */
+        cursor: pointer; /* Cambia el cursor al pasar */
+        transition: background-color 0.3s; /* Transición suave */
+    }
+    
+    .btn:hover {
+        background-color: #b53353; /* Cambia el color de fondo al pasar el mouse */
+    }
+    
+    .footer {
+        background-color: var(--color-accent); /* Usa el color de acento definido */
+        padding: 20px; /* Añade relleno */
+        color: var(--color-background); /* Usa el color de fondo definido */
+        text-align: center; /* Alinea el texto al centro */
+        margin-top: 20px; /* Añade un margen superior */
+    }
+    
+    .footer-info h4 {
+        margin-top: 0; /* Elimina el margen superior */
+    }
+    
+    .footer-info ul {
+        padding: 0; /* Elimina el relleno */
+        list-style-type: none; /* Elimina el marcado de lista */
+    }
+    
+    .social-links {
+        display: flex; /* Usa un modelo de caja flexible */
+        justify-content: center; /* Alinea los elementos al centro horizontal */
+        gap: 20px; /* Añade espacio entre elementos */
+    }
+    
+    .social-links li {
+        display: inline; /* Muestra como elemento en línea */
+    }
+    
+    .social-links li a {
+        color: var(--color-background); /* Usa el color de fondo definido */
+        text-decoration: none; /* Elimina el subrayado */
+    }
+    
+    .centrar {
+        display: flex; /* Usa un modelo de caja flexible */
+        justify-content: center; /* Alinea los elementos al centro horizontal */
+        align-items: center; /* Alinea los elementos al centro vertical */
+        flex-direction: column; /* Establece la dirección de flexión */
+        text-align: center; /* Alinea el texto al centro */
+    }
+    
+    .contenedor.seccion {
+        text-align: center; /* Alinea el texto al centro */
+    }
+    
+    /* Estilo nosotros*/
+    .encabezado-nos {
+        background-color: #f8b400;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .titulo-principal {
+        margin: 0;
+    }
+    
+    .contenido-principal {
+        padding: 20px;
+    }
+    
+    .seccion {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .titulo-seccion {
+        color: #f8b400;
+    }
+    
+    .texto-seccion {
+        margin: 10px 0;
+    }
+    
+    .imagen-seccion {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin: 10px 0;
+        border-radius: 8px;
+    }
+    
+    .pie-pagina {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+    /* Estilo pedidos*/
+    .galeria-encabezado {
+        background-color: #f8b400;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    .galeria-titulo {
+        margin: 0;
+    }
+    
+    .galeria-contenido {
+        padding: 20px;
+    }
+    
+    .galeria-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    
+    .galeria-item {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    .galeria-imagen {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+    
+    .galeria-descripcion {
+        padding: 10px;
+    }
+    
+    .galeria-descripcion p {
+        margin: 10px 0;
+        font-size: 16px;
+        color: #555;
+    }
+    
+    .galeria-boton {
+        background-color: #f8b400;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .galeria-boton:hover {
+        background-color: #e0a300;
+    }
+    
+    .galeria-pie-pagina {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .card__item {
+            width: calc(50% - 20px); /* Ajusta el ancho de las tarjetas para pantallas más pequeñas */
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        .card__item {
+            width: calc(100% - 20px); /* Ajusta el ancho de las tarjetas para pantallas muy pequeñas */
+        }
+    }
